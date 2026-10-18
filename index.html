@@ -28,5 +28,14 @@
   <p>I also made a mistake that taught me something useful. When my website first showed a 404 error, I spent a long time thinking my account had been blocked. In fact, the problem was much simpler — I had typed the wrong address. This reminded me that, in digital work, checking the small details carefully is as important as understanding the big ideas.</p>
   <p>This task connected to our reading on algorithms. Building a page myself made me realise that the internet is not a neutral space — it is made of choices, and now I am starting to understand how those choices are made.</p>
 
+  <h2>Week 3 Reflection: Web Scraping</h2>
+  <p>This week I used the Web Scraper browser extension to build my first dataset, by scraping the BBC iPlayer homepage. I created a sitemap, defined a selector targeting the "New &amp; Trending" section, and extracted the titles of five programmes.</p>
+  <p>The process taught me two things. First, a website is not a "given" object but an assembly of code. Scraping works by reading that code, and my selector had to target the exact HTML container in order to return clean data — a small mistake in the selector and I collected a cookie banner instead of programmes.</p>
+  <p>Second, and more importantly, I experienced the limitation the workshop kept returning to: scraping can only harvest what the code defines. I could collect the <em>title</em> of a programme, but the tool told me nothing about <em>why</em> the BBC chose to promote it, or how audiences experience it. The data arrived without context, and the meaning still has to come from human interpretation.</p>
+  <p>A technical struggle was also instructive. My scraper's export options would only flatten all the titles into one cell, or spread them across separate columns, rather than listing them one per row. Getting clean, analysable data meant knowing how to work around the tool's limits — which is itself a research skill, and a reminder that "raw data" is never quite raw.</p>
+
+  <h3>My Dataset (BBC iPlayer, "New &amp; Trending", scraped 16 October 2026)</h3>
+  <p style="text-indent:0;"><img src="week3_dataset.png" alt="Table of five programme titles scraped from the BBC iPlayer New and Trending section" style="max-width:100%;border:1px solid #ddd;"></p>
+
 </body>
 </html>
